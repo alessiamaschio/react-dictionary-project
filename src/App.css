@@ -1,0 +1,24 @@
+.App {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f1eda2;
+
+  /* font-family: "Crimson Text", Georgia; */
+  /* font-family: "Oswald", Helvetica Neue; */
+  font-family: "Roboto", sans-serif;
+}
+
+.App-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Courgette", cursive;
+}
+
+.Image-header {
+  max-width: 80px;
+  margin-right: 10px;
+}
