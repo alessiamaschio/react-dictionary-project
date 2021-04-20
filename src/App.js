@@ -1,16 +1,18 @@
-import "./App.css";
-import vocabulary from "./images/vocabulary.png";
+import React from "react";
+import Search from "./Search";
+
+import "./App2.css";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1 className="App-title mt-4 ">
-            <img className="Image-header" src={vocabulary} alt="vocabulary" />
-            Dictionary{" "}
-          </h1>
+          <h1 className="App-title ">Dictionary </h1>
         </header>
+        <main>
+          <Search />
+        </main>
       </div>
     </div>
   );
