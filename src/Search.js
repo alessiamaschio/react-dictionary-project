@@ -15,7 +15,7 @@ export default function Search() {
   function searchWord(event) {
     event.preventDefault();
 
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${input}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${input}`;
     axios
       .get(apiUrl)
       .then(handleResponse)
