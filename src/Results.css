@@ -1,0 +1,24 @@
+.Results {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+@media all and (min-width: 600px) {
+  .Results {
+    max-width: 500px;
+
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .Results {
+    max-width: 800px;
+
+    padding: 20px;
+  }
+}
