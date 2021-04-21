@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "./Search";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -12,8 +13,9 @@ function App() {
         </header>
         <main>
           <Search />
-        </main>
-      </div>
+        </main>{" "}
+      </div>{" "}
+      <Footer />
     </div>
   );
 }
