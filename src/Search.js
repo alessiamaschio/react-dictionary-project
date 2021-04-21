@@ -37,6 +37,7 @@ export default function Search() {
     <div>
       <form onSubmit={searchWord}>
         <input
+          className="Search-bar"
           type="search"
           autoFocus={true}
           placeholder="Search for a word..."

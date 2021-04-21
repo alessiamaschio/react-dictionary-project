@@ -2,23 +2,22 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+  width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background-color: #f1eda2;
+  background: url(./images/OFEA530.jpg) #000 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-  /* font-family: "Crimson Text", Georgia; */
-  /* font-family: "Oswald", Helvetica Neue; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Cutive Mono", monospace;
 }
 
 .App-title {
   text-align: center;
-  font-size: 30px;
-  font-family: "Courgette", cursive;
-}
-
-.Image-header {
-  max-width: 80px;
-  margin-right: 10px;
+  font-size: 40px;
+  font-family: "VT323", monospace;
+  color: #fff;
+  padding-top: 20px;
 }

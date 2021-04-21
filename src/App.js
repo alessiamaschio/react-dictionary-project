@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "./Search";
 
-import "./App2.css";
+import "./App.css";
 
 function App() {
   return (

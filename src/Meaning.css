@@ -1,3 +1,23 @@
 .Example {
   font-style: italic;
+  font-size: 16px;
+  color: #333333;
+}
+
+.Part-of-speech {
+  font-weight: 600;
+  font-size: 22px;
+  color: #a80038;
+}
+.Definition {
+  font-size: 18px;
+  color: #000;
+}
+.Definition,
+.Example {
+  line-height: 1;
+}
+
+.Meaning-result-container {
+  padding-bottom: 12px;
 }
