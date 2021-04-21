@@ -4,4 +4,6 @@ form {
 
 .Search-bar {
   width: 250px;
+  border: 2px dashed #ffff00;
+  border-width: thick;
 }

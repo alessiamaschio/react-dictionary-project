@@ -1,17 +1,24 @@
 .App {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto;
   background: url(./images/OFEA530.jpg) #000 no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
 
+.container {
   font-family: "Cutive Mono", monospace;
+  height: 85vh;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App-title {
