@@ -8,7 +8,7 @@ export default function Footer() {
       {" "}
       <div>
         <span className="Reference"> Coded with</span>
-        <img src={heart} alt="heart" className="Heart" />
+        <img src={heart} alt="heart" className="Heart" loading="lazy" />
         by{" "}
         <a
           href="https://www.linkedin.com/in/alessia-maschio-a8317734/"

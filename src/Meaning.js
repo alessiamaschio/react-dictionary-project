@@ -5,7 +5,7 @@ import Example from "./Example";
 
 export default function Meaning(props) {
   return (
-    <div>
+    <div className="Meaning">
       <h3 className="Part-of-speech">{props.value.partOfSpeech}</h3>
       {props.value.definitions.map(function (definition, index) {
         return (
