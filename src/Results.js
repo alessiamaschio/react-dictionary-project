@@ -5,7 +5,6 @@ import quotationMark from "./images/quotation-mark.png";
 import quotationRightMark from "./images/quotation-right-mark.png";
 
 export default function Results(props) {
-  console.log(props.value);
   if (props.value) {
     return (
       <section className="Results mt-4">

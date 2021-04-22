@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import heart from "./images/hearts.png";
 import "./Footer.css";
 
 export default function Footer() {
-  // const [isClick, setClick] = useState(false);
   return (
     <footer>
       {" "}

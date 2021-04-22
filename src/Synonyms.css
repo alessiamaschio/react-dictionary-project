@@ -1,0 +1,12 @@
+.Synonym-item {
+  line-height: 1.1;
+  margin: 0;
+}
+.Synonyms {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
