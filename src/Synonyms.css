@@ -3,10 +3,8 @@
   margin: 0;
 }
 .Synonyms {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
