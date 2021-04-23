@@ -4,9 +4,10 @@ import "./Example.css";
 export default function Example(props) {
   if (props.value) {
     return (
-      <p className="Example">
-        <strong>Example:</strong> {props.value}
-      </p>
+      <div className="Example">
+        <strong>Example:</strong>
+        <div>{props.value}</div>
+      </div>
     );
   } else {
     return null;

@@ -1,3 +1,22 @@
 .Phonetics {
   text-align: center;
 }
+
+.Phonetic-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 22px;
+  text-shadow: 0 0 3px #f00;
+}
+
+.Phonetic-link:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 3px #00f;
+}
+
+.Phonetic-link:active {
+  text-shadow: 0 0 3px #0f0;
+}
+.Phonetic-link:visited {
+  text-shadow: 0 0 3px #bebebe;
+}
