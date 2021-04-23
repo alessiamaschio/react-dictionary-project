@@ -12,7 +12,7 @@ function App() {
           <h1 className="App-title ">Dictionary </h1>
         </header>
         <main>
-          <Search />
+          <Search value="dictionary" />
         </main>{" "}
       </div>{" "}
       <Footer />

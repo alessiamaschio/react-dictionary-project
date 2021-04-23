@@ -3,7 +3,16 @@ form {
 }
 
 .Search-bar {
-  width: 250px;
+  width: 290px;
   border: 2px dashed #ffff00;
   border-width: thick;
+  padding: 5px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media all and (min-width: 1200px) {
+  form {
+    padding-bottom: 30px;
+  }
 }
