@@ -2,7 +2,6 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  console.log(props.value);
   if (props.value) {
     if (props.value.length > 0) {
       return (
