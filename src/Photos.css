@@ -1,3 +1,16 @@
+.Images-button {
+  width: 150px;
+  background: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
 .Photo-container {
   background-color: transparent;
   border: none;
