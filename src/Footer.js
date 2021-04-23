@@ -30,6 +30,24 @@ export default function Footer() {
         >
           <i className="fab fa-github"></i> GitHub
         </a>
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.freepik.com"
+            rel="noopener noreferrer"
+            className="Footer-link"
+          >
+            Freepik
+          </a>{" "}
+          from{" "}
+          <a
+            href="https://www.flaticon.com/"
+            rel="noopener noreferrer"
+            className="Footer-link"
+          >
+            Flaticon
+          </a>
+        </div>
       </div>
     </footer>
   );
