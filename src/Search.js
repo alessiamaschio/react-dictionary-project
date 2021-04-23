@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import swal from "sweetalert";
 import Results from "./Results";
+import Photos from "./Photos";
 
 import "./Search.css";
 
@@ -9,9 +10,15 @@ export default function Search(props) {
   const [input, setInput] = useState(props.value);
   let [output, setOutput] = useState(null);
   let [loaded, setLoaded] = useState(false);
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     setOutput(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    console.log(response.data);
+    setPhotos(response.data.photos);
   }
 
   function search() {
@@ -27,6 +34,11 @@ export default function Search(props) {
           button: "Try again!",
         })
       );
+
+    let apiKey = "563492ad6f9170000100000193f75f95301b47bf828108f7ae576a57";
+    let pexelsUrl = `https://api.pexels.com/v1/search?query=${input}&per_page=6`;
+    let headers = { Authorization: `Bearer ${apiKey}` };
+    axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
@@ -55,10 +67,10 @@ export default function Search(props) {
               defaultValue={props.value}
               onChange={handleInputChange}
             ></input>
-            {/* <input type="submit" value="Search"></input> */}
           </form>{" "}
         </section>
         <Results value={output} />
+        <Photos value={photos} alt={input} />
       </div>
     );
   } else {

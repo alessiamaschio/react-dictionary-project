@@ -14,7 +14,6 @@ export default function Phonetics(props) {
     event.preventDefault();
     play();
   }
-  console.log(props.value);
 
   return (
     <div className="Phonetics">

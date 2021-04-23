@@ -10,7 +10,6 @@ export default function Synonyms(props) {
           {" "}
           <p className="Synonym-item">
             {props.value.map(function (synonym, index) {
-              console.log(props.value.length);
               if (index < props.value.length - 1) {
                 return <span key={index}>{synonym}, </span>;
               } else {

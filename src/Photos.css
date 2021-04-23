@@ -1,0 +1,44 @@
+.Photo-container {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.Photo {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px dashed #bebebe;
+  border-width: thin;
+}
+
+@media all and (min-width: 600px) {
+  .Photo-container {
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .Photo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .Photo-container {
+    max-width: 800px;
+  }
+
+  .Photo {
+    width: 350px;
+  }
+}
