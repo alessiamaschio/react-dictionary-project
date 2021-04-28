@@ -9,3 +9,17 @@
   font-style: italic;
   padding-top: 5px;
 }
+
+.Example-result-title,
+.Example-result-description,
+.Example-result-note {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1;
+  font-style: italic;
+  padding-top: 5px;
+}
+
+.Example-result-description {
+  padding-bottom: 10px;
+}

@@ -7,7 +7,7 @@ import Photos from "./Photos";
 import "./Search.css";
 
 export default function Search(props) {
-  const [input, setInput] = useState(props.value);
+  const [input, setInput] = useState("");
   let [output, setOutput] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
@@ -25,14 +25,16 @@ export default function Search(props) {
     axios
       .get(apiUrl)
       .then(handleResponse)
-      .catch(() =>
-        swal({
-          title: "Error, error...",
-          text: "Are you sure you typed the word correctly? 😉",
-          icon: "error",
-          button: "Try again!",
-        })
-      );
+      .catch(() => {
+        if (input !== "") {
+          swal({
+            title: "Error, error...",
+            text: "Are you sure you typed the word correctly? 😉",
+            icon: "error",
+            button: "Try again!",
+          });
+        }
+      });
 
     let apiKey = "563492ad6f9170000100000193f75f95301b47bf828108f7ae576a57";
     let pexelsUrl = `https://api.pexels.com/v1/search?query=${input}&per_page=6`;
@@ -63,7 +65,6 @@ export default function Search(props) {
               type="search"
               autoFocus={true}
               placeholder="Search for a word..."
-              defaultValue={props.value}
               onChange={handleInputChange}
             ></input>
           </form>{" "}

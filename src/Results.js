@@ -5,6 +5,7 @@ import Phonetics from "./Phonetics";
 import quotationMark from "./images/quotation-mark.png";
 import quotationRightMark from "./images/quotation-right-mark.png";
 import pronunciation from "./images/pronunciation.png";
+import WordOfTheDay from "./WordOfTheDay";
 
 export default function Results(props) {
   if (props.value) {
@@ -46,6 +47,6 @@ export default function Results(props) {
       </section>
     );
   } else {
-    return null; //add word of the day or picture
+    return <WordOfTheDay />;
   }
 }
